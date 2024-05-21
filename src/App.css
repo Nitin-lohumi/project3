@@ -1,0 +1,126 @@
+body{
+    padding:0;
+    margin:0;
+
+}
+h1{
+    text-align: center;
+    color:blue;
+    font-size: 2rem;
+    border:0px solid black;
+    padding:4px;
+    margin:3px;
+}
+.Box1{
+    border:0px solid black;
+    padding:4px;
+    margin: 10px 3px;
+}
+.Balance{
+    border:0px solid black;
+    text-align: center;
+    width:40%;
+    margin:auto;
+    box-shadow: 1px 1px 7px rgb(187, 185, 185);
+    border-radius: .5rem;
+
+}
+.Balance h2{
+    text-align: center;
+    text-transform: capitalize;
+    padding:10px 0;
+}
+.income{
+    display: flex;
+    justify-content: space-around;
+}
+.income div{
+    width:100%;
+}
+.income .left{
+    /* border-right: 2px solid rgb(249, 239, 239); */
+    box-shadow: 1px 1px 2px rgb(225, 215, 215);
+}
+.income .right{
+    /* border-right: 2px solid rgb(249, 239, 239); */
+    box-shadow: 1px 1px 2px rgb(232, 221, 221);
+}
+.box2{
+    border: 0px solid black;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 1px 1px 7px rgb(187, 185, 185);
+    border-radius: .5rem;
+}
+.expences{
+    width:80%;
+    margin:auto;  
+}
+.expences table{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+.expences table button{
+    cursor: pointer;
+    padding:4px;
+}
+.expences h2{
+    text-align: center;
+    text-transform: uppercase;
+    color:rgb(255, 0, 102);
+}
+.new_add{
+    width:100%;
+    box-shadow: 1px 1px 3px rgb(105, 99, 99);
+    padding:10px;
+}
+.inner_new{
+    width:50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding:20px 0;
+    
+}
+.inner_new h2{
+    text-align: center;
+    color:rgb(255, 0, 0);
+    margin:0;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.inner_new select{ 
+    width:30%;
+    font-size: 1.2rem;
+    margin:10px 0;
+    padding:5px;
+    border-radius: .5rem;
+}
+.inner_new select option{
+    background: #f13d3d;
+    font-size: 21px;
+}
+.inner_new input{
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1.3rem;
+    border-radius: .5rem;
+}
+.inner_new button{
+    padding:10px;
+    font-size: 1.2rem;
+    background: green;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: .5rem;
+    color:white;
+}
+.inner_new button:hover{
+    background: rgb(118, 194, 3);
+    color:aliceblue;
+}
