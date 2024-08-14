@@ -55,10 +55,19 @@ h1{
 }
 .expences{
     width:80%;
-    margin:auto;  
+    margin:auto; 
+    overflow-x:hidden; 
+    height: 600px;
+    max-height: 320px;
+    overflow-x: hidden;
+}
+.expences::-webkit-scrollbar{
+    color:green;
+    background: #03fa07;
+    width:3px;
 }
 .expences table{
-    width:80%;
+    width:100%;
     margin: auto;
     text-align: center;
     font-size: 1.5rem;
@@ -101,8 +110,13 @@ h1{
     border-radius: .5rem;
 }
 .inner_new select option{
-    background: #f13d3d;
+    background: #faf9f9;
     font-size: 21px;
+    color: rgb(163, 0, 0);
+}
+.inner_new select option:first-child{
+    font-weight: 600;
+    color:green;
 }
 .inner_new input{
     padding: 10px;
@@ -123,4 +137,123 @@ h1{
 .inner_new button:hover{
     background: rgb(118, 194, 3);
     color:aliceblue;
+}
+.deletebtn{
+    color:red;
+    background: lightgoldenrodyellow;
+    border-radius: .5rem;
+    padding:1px;
+    font-size: 1.1rem;
+    margin:10px;
+    font-weight: 700;
+}
+
+@media (min-width: 200px) and (max-width: 500px) {
+    body{
+        overflow:hidden;
+    }
+   .Box1{
+    width:100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+   }
+   .Balance{
+    text-align: center;
+    width: 90%;
+    padding: 3px;
+    background-color: beige
+   }
+   .income{
+    font-size: 14px;
+   }
+   .box2{
+    width:98%;
+    margin: auto;
+    margin-top: 50px;
+    align-items: center;
+    box-shadow: 1px 1px 7px rgb(77, 228, 27);
+    padding:0;
+    overflow:hidden;
+}
+.expences{
+    width:100%;
+    height: 320px;
+    max-height: 370px;
+}
+.expences table{
+    width:100%;
+    text-align: center;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.expences table button{
+    cursor: pointer;
+    padding:2px;
+}
+.expences h2{
+    font-size: 15px;
+}
+.new_add{
+    width:40%;
+    box-shadow: 1px 1px 3px rgb(105, 99, 99);
+    padding: 10px;
+}
+.inner_new{
+    width:100%;
+}
+.inner_new h2{
+    text-align: center;
+    color:rgb(255, 0, 0);
+    margin:10px;
+    font-size: 1rem;
+}
+.inner_new select{ 
+    width:80%;
+    font-size: 1.2rem;
+    margin:10px 0;
+    padding:5px;
+    border-radius: .5rem;
+}
+.inner_new select option{
+    background: #faf9f9;
+    font-size: 13px;
+    color: rgb(255, 65, 65);
+}
+.inner_new select option:first-child{
+    font-weight: 600;
+    color:green;
+}
+.inner_new input{
+    padding: 4px;
+    margin: 15px 0;
+    font-size: 15px;
+    border-radius: .5rem;
+}
+.inner_new button{
+    padding:6px;
+    font-size: 1rem;
+    background: green;
+    color:white;
+}
+.inner_new button:hover{
+    background: rgb(118, 194, 3);
+    color:aliceblue;
+}
+.deletebtn{
+    color:rgb(218, 218, 218);
+    background: rgb(255, 0, 0);
+    border-radius: .5rem;
+    padding:1px;
+    font-size: 12px;
+    margin:5px;
+    font-weight: 300;
+}
+table thead{
+    width:60%;
+    font-size: 14px;
+}
+table tbody tr{
+    font-size: 15px;
+}
 }
