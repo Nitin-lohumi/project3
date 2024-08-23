@@ -7,14 +7,13 @@ function App() {
   const [name, setname] = useState('');
   const [ammount, setAmount] = useState(0);
   const [Type, setType] = useState('+');
-  const [S_no, setS_no] = useState(1);
+  const [S_no,setS_no] = useState(1);
   const [store,setStore] = useState([]);
   const[count,setCount] = useState(0);
   const[income,setIncome]= useState(0);
   const[expences,setExpences] = useState(0);
   const [isset,setIsset]= useState(false);
   const[displayData,SetDisplayData] = useState([]);
-  let data;
   useEffect(()=>{
     setCount((e)=>{
       let store=0;
@@ -25,10 +24,10 @@ function App() {
         store = e-Number(ammount);
       }
       return store;
-    });
-      data = JSON.parse(localStorage.getItem('Data'));
+    })
       SetDisplayData(JSON.parse(localStorage.getItem('Data')));
       setExpences(store.length);
+      localStorage.setItem('s_no',JSON.stringify(S_no));
       if(isset){
         localStorage.setItem('currentbalance',JSON.stringify(count));
         localStorage.setItem('income',JSON.stringify(income));
@@ -51,8 +50,8 @@ function App() {
        return store;
     });
     setExpences(prev=>prev-1);
-    setStore(updatedTransactions);
     setS_no(pre=>pre-1);
+    setStore(updatedTransactions);
     localStorage.setItem('currentbalance',JSON.stringify(count));
     localStorage.setItem('income',JSON.stringify(income));
     localStorage.setItem('expense',JSON.stringify(expences));
@@ -61,6 +60,7 @@ function App() {
   }
   function Add(){
     setS_no(pre => pre + 1);
+    localStorage.setItem('s_no',JSON.stringify(S_no));
     setStore([...store,{id:Math.floor(Math.random()*1000000000),s_n:S_no,name:name,ammount:ammount,type:Type}]);
     setIsset(true);
   }
